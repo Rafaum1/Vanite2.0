@@ -1,5 +1,5 @@
 /* ============================================================
-   Vanité — interações em JavaScript puro
+    Vanité — interações em JavaScript puro
    ============================================================ */
 (function () {
   "use strict";
@@ -26,37 +26,37 @@
   }
 
   /* ============================================================
-     ATELIER — construtor de produto estilo e-commerce + carrinho
+    ATELIER — construtor de produto estilo e-commerce + carrinho
      ============================================================ */
   var BRL = function (v) {
-    return "R$ " + v.toLocaleString("pt-BR", { minimumFractionDigits: 0, maximumFractionDigits: 0 });
+    // return "R$ " + v.toLocaleString("pt-BR", { minimumFractionDigits: 0, maximumFractionDigits: 0 });
   };
 
   var BASES = [
-    { id: "facial", name: "Creme Facial", img: "assets/line-facial.jpg", price: 189, desc: "Creme facial nutritivo com ativos botânicos para uma pele luminosa e confortável." },
-    { id: "corporal", name: "Loção Corporal", img: "assets/line-corporal.jpg", price: 149, desc: "Loção sedosa de absorção rápida que nutre profundamente a pele do corpo." },
-    { id: "capilar", name: "Máscara Capilar", img: "assets/line-capilar.jpg", price: 129, desc: "Tratamento capilar recarregável com extratos naturais para brilho saudável." }
+    { id: "facial", name: "Creme Facial", img: "assets/line-facial.jpg", price: 0, desc: "Creme facial nutritivo com ativos botânicos para uma pele luminosa e confortável." },
+    { id: "corporal", name: "Loção Corporal", img: "assets/line-corporal.jpg", price: 0, desc: "Loção sedosa de absorção rápida que nutre profundamente a pele do corpo." },
+    { id: "capilar", name: "Máscara Capilar", img: "assets/line-capilar.jpg", price: 0, desc: "Tratamento capilar recarregável com extratos naturais para brilho saudável." }
   ];
 
   var FRAGRANCES = [
     { id: "sem", name: "Sem fragrância", note: "Pureza absoluta", add: 0, desc: "A fórmula essencial, sem aromas adicionados. Ideal para peles sensíveis." },
-    { id: "lavanda", name: "Lavanda", note: "Floral · Calmante", add: 19, desc: "Colhida na Provença, traz serenidade e um perfume delicado ao fim do dia." },
-    { id: "bambu", name: "Bambu", note: "Verde · Fresco", add: 19, desc: "Nota limpa e vibrante, com a frescura translúcida das florestas de bambu." },
-    { id: "alecrim", name: "Alecrim", note: "Herbal · Revigorante", add: 19, desc: "Aromático e energizante, com o caráter mediterrâneo das ervas selvagens." },
-    { id: "hortela", name: "Hortelã", note: "Mentolado · Vivo", add: 19, desc: "Refrescância instantânea com um toque cristalino de menta." },
-    { id: "baunilha", name: "Baunilha", note: "Doce · Aconchegante", add: 24, desc: "Envolvente e quente, a baunilha de Madagascar traz conforto e sensualidade." }
+    { id: "lavanda", name: "Lavanda", note: "Floral · Calmante", add: 0, desc: "Colhida na Provença, traz serenidade e um perfume delicado ao fim do dia." },
+    { id: "bambu", name: "Bambu", note: "Verde · Fresco", add: 0, desc: "Nota limpa e vibrante, com a frescura translúcida das florestas de bambu." },
+    { id: "alecrim", name: "Alecrim", note: "Herbal · Revigorante", add: 0, desc: "Aromático e energizante, com o caráter mediterrâneo das ervas selvagens." },
+    { id: "hortela", name: "Hortelã", note: "Mentolado · Vivo", add: 0, desc: "Refrescância instantânea com um toque cristalino de menta." },
+    { id: "baunilha", name: "Baunilha", note: "Doce · Aconchegante", add: 0, desc: "Envolvente e quente, a baunilha de Madagascar traz conforto e sensualidade." }
   ];
 
   var SIZES = [
     { id: "50", name: "50 ml", sub: "Descoberta", add: 0 },
-    { id: "100", name: "100 ml", sub: "Essencial", add: 50 },
-    { id: "200", name: "200 ml", sub: "Maison", add: 90 }
+    { id: "100", name: "100 ml", sub: "Essencial", add: 0 },
+    { id: "200", name: "200 ml", sub: "Maison", add: 0 }
   ];
 
   var INTENSITIES = [
     { id: "suave", name: "Suave", add: 0 },
     { id: "equilibrada", name: "Equilibrada", add: 0 },
-    { id: "intensa", name: "Intensa", add: 12 }
+    { id: "intensa", name: "Intensa", add: 0 }
   ];
 
   var state = { base: "corporal", frag: "lavanda", size: "100", intensity: "equilibrada" };
